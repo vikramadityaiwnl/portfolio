@@ -7,11 +7,11 @@ export const Hero = () => {
       <div className="top-0 left-0 -z-10 absolute bg-primary blur-[200px] w-[300px] h-[100px]"></div>
       <div className="top-0 left-0 -z-10 absolute bg-primary blur-[200px] w-[300px] h-[100px]"></div>
 
-      <div className="flex gap-4 justify-center items-center flex-col text-center">
-        <span className="text-2xl md:text-3xl lg:text-4xl font-bold">
+      <div className="flex gap-3 md:gap-4 justify-center items-center flex-col text-center">
+        <span className="text-4xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
           Hey! I'm <span className="text-primary font-bold">Vikramaditya</span>
         </span>
-        <span className="text-lg md:text-xl lg:text-2xl max-w-2xl">
+        <span className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl px-2">
           A tech enthusiast and a full-stack developer who wants to learn new
           things.
         </span>

@@ -5,6 +5,12 @@ export default {
     extend: {
       colors: {
         primary: "#f97316",
+        background: "#ffffff",
+        surface: "#fafafa",
+        text: {
+          primary: "#111827",
+          secondary: "#4b5563",
+        },
       },
     },
   },

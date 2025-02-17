@@ -5,7 +5,7 @@ import { Skills } from "./components/Skills";
 
 function App() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden w-full relative">
       <Hero />
       <Projects />
       <Skills />
