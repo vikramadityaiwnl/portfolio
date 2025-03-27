@@ -22,17 +22,17 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
   return (
     <div
-      className="fixed inset-0 backdrop-blur-md bg-black/30 flex items-center justify-center z-50"
+      className="fixed inset-0 backdrop-blur-md bg-black/30 flex items-center justify-center z-50 p-4"
       onClick={handleClose}
     >
       <div
-        className={`bg-[#1A1B1E] rounded-lg p-8 max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto ${
+        className={`bg-[#1A1B1E] rounded-lg p-4 md:p-8 w-full max-w-2xl max-h-[90vh] overflow-y-auto ${
           isClosing ? "modal-exit" : "modal-enter"
         }`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-start justify-between mb-6">
-          <div className="flex items-center gap-4">
+        <div className="flex items-start justify-between mb-4 md:mb-6">
+          <div className="flex items-center gap-3 md:gap-4">
             {project.image ? (
               <img
                 src={project.image}
@@ -42,7 +42,9 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             ) : project.icon ? (
               <div className="text-4xl">{project.icon}</div>
             ) : null}
-            <h2 className="text-2xl font-bold text-white">{project.name}</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">
+              {project.name}
+            </h2>
           </div>
           <button
             onClick={handleClose}

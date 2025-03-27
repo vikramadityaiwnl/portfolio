@@ -7,12 +7,12 @@ export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <div id="projects" className="min-h-screen py-20">
+    <div id="projects" className="min-h-screen py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-[#007CF0] to-[#00DFD8] bg-clip-text text-transparent leading-tight">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-[#007CF0] to-[#00DFD8] bg-clip-text text-transparent leading-tight">
           Projects
         </h2>
-        <p className="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
+        <p className="text-base md:text-xl text-gray-400 text-center mb-8 md:mb-16 max-w-3xl mx-auto">
           Here are some of the projects I've worked on. Each project represents
           a unique challenge and opportunity to learn something new. Click on
           any project to learn more about it.
